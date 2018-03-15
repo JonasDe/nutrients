@@ -1,7 +1,7 @@
-*** Requirements
+### Requirements
 - Docker
 
-*** To get it up and running
+### To get it up and running
 ```
 # Start
 docker build -t <your username>/node-web-app .
