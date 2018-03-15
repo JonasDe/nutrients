@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MY APP</title>
+<!-- <link rel="stylesheet" href="/public/bootstrap-table.min.css">
+ -->
+
+<!--  <link rel="stylesheet" href="/public/jquery.dynatable.css">
+ -->
+  <link rel="stylesheet" href="/public/style.css">
+	
+
+ <script src='/public/jquery-3.3.1.min.js'></script>
+
+<script src="/public/bootstrap-table.min.js"></script>
+</head>
+<body>
+	<div>
+		<table class="table" data-pagination="true" data-search="true" data-toggle="table">
+			<thead>
+				<% for (x in food[0]){ %>
+				<th data-sortable="true"> <%= x %> </th>
+				<% } %>
+			</thead>
+			<tbody >
+				<% for(var i=0; i<food.length; i++) {%>
+				<tr>
+
+				<% for (x in food[i]){ %>
+					<td><%= food[i][x] %> </td>
+				<% } %>
+				</tr>
+				<% } %>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
